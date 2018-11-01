@@ -29,5 +29,3 @@ console.log(fibonacci(20)); // 6765
 
 // в любой момент можно получить общее количество времени на вызовы
 console.log(timers.fibo + 'мс');
-
-alert('Hello World!');
