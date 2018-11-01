@@ -1,0 +1,19 @@
+do {
+    var num = prompt ("¬ведите значение больше 100?", '');
+} while ( num != null && (!Boolean(+num) || +num <= 100) )
+
+---------------
+
+function getDecimal(num) {
+var a = ((num) - Math.floor(num)),
+b = (Math.ceil(num) - (num));
+if (num > 0) {
+return (Math.round(a * 1000) / 1000);
+} else {
+return (Math.round(b * 1000) / 1000);
+}
+}
+
+alert( getDecimal(12.345) ); // 0.345
+alert( getDecimal(1.2) ); // 0.2
+alert( getDecimal(-1.2) ); // 0.2
